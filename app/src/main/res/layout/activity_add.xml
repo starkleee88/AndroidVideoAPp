@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorGray"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <EditText
+        android:id="@+id/titleVid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:hint="Enter Title..."
+        android:inputType="textPersonName|textCapSentences"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack" />
+    
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_below="@+id/titleVid"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/videoview_bg"/>
+
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_bg"
+        android:text="UPLOAD VIDEO"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/pickVidBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_add_bg"
+        android:src="@drawable/send_ic"/>
+
+
+</RelativeLayout>
